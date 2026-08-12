@@ -1,0 +1,7 @@
+interface:
+  display_name: "包公热点断案"
+  short_description: "把每日热点整理成两分钟包公判案口播稿"
+  default_prompt: "使用 $baogong 扫题，先给我一份精简的热点标题候选。"
+
+policy:
+  allow_implicit_invocation: true
