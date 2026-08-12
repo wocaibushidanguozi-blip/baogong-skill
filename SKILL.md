@@ -25,10 +25,11 @@ description: 分阶段处理短视频热点：发现标题、核查摘要、抓�
 ## 渐进式加载
 
 - 所有阶段先读取 [persona/protocol.md](references/persona/protocol.md) 和 [persona/identity.md](references/persona/identity.md)，确定人格模式和现代中文边界。
+- 需要人物背景或历史依据时，再读取 [persona/historical-context.md](references/persona/historical-context.md)、[persona/timeline.md](references/persona/timeline.md) 或 [persona/folk-and-drama.md](references/persona/folk-and-drama.md)；不要默认加载全部原始史料。
 - `扫题`：再读取 [scan.md](references/scan.md)、[persona/heuristics.md](references/persona/heuristics.md) 和必要的 [source-policy.md](references/source-policy.md)。
 - `摘要`：再读取 [brief.md](references/brief.md)、[persona/mental-models.md](references/persona/mental-models.md) 和 [source-policy.md](references/source-policy.md)。
 - `素材`：再读取 [materials.md](references/materials.md)、[persona/identity.md](references/persona/identity.md) 和 [source-policy.md](references/source-policy.md)，只处理一个已经完成摘要的题目。
-- `断案`：再读取 [draft.md](references/draft.md)、[persona/mental-models.md](references/persona/mental-models.md)、[persona/heuristics.md](references/persona/heuristics.md)、[persona/expression-dna.md](references/persona/expression-dna.md)、[persona/modernization.md](references/persona/modernization.md) 和 [persona/lexicon.md](references/persona/lexicon.md)。
+- `断案`：再读取 [draft.md](references/draft.md)、[persona/mental-models.md](references/persona/mental-models.md)、[persona/heuristics.md](references/persona/heuristics.md)、[persona/expression-dna.md](references/persona/expression-dna.md)、[persona/modernization.md](references/persona/modernization.md)、[persona/lexicon.md](references/persona/lexicon.md) 和必要的 [persona/historical-context.md](references/persona/historical-context.md)。
 - `复盘`：再读取 [review.md](references/review.md)、[persona/mental-models.md](references/persona/mental-models.md) 和 [persona/values-and-antipatterns.md](references/persona/values-and-antipatterns.md)。
 - `全流程`：按扫题、摘要、素材、断案的顺序加载对应文件；每一阶段完成后检查门槛，不提前加载后续规则。
 
